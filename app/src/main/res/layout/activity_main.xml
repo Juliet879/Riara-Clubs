@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#e390ae"
+    android:id="@+id/drawerLayout">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/frag_container"
+        >
+
+        <Button
+            android:id="@+id/menu_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@drawable/round_menu"
+            android:theme="@style/CustomMenuIcon"
+            />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:layout_centerInParent="true"
+            app:dampingRatio="0.5"
+            app:dotsColor="#d45381"
+            app:dotsStrokeColor="#d96790"
+            app:dotsCornerRadius="10dp"
+            app:dotsSize="16dp"
+            app:dotsSpacing="6dp"
+            app:dotsStrokeWidth="1dp"
+            app:stiffness="350"
+
+            />
+
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="16dp"
+            android:padding="8dp"
+            app:cnb_menuResource="@menu/menu_nav"
+            />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F7FFFFFF"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/side_menu"
+        app:itemIconSize="13dp"
+        app:itemTextAppearance="@style/NavigationDrawerText"
+        app:itemIconPadding="20dp"
+        app:itemBackground="@drawable/drawer_item"
+        android:theme="@style/NavTheme">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80dp"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb"
+                app:fabSize="mini"
+                app:backgroundTint="@color/white"
+                app:fabCustomSize="60dp"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="@string/fb_link" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twitter"
+                app:fabSize="mini"
+                app:backgroundTint="@color/white"
+                app:fabCustomSize="60dp"
+                android:contentDescription="@string/twitter_link" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabIG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/instagram"
+                app:fabSize="mini"
+                app:backgroundTint="@color/white"
+                app:fabCustomSize="60dp"
+                android:layout_marginStart="15dp"
+                android:contentDescription="@string/ig_link" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright_text"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp"
+            app:drawableStartCompat="@drawable/copyright" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

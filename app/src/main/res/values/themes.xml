@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Coco" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#DCD7E3</item>
+        <item name="colorPrimaryVariant">#DCD7E3</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- For menu icon that opens navigation drawer in main activity -->
+    <style name="CustomMenuIcon" parent="ThemeOverlay.AppCompat">
+        <item name="colorPrimary">#fff</item>
+    </style>
+
+    <!-- Navigation drawer text font -->
+    <style name="NavigationDrawerText">
+        <item name="android:fontFamily">@font/eb_garamond</item>
+    </style>
+
+    <style name="NavTheme">
+        <item name="colorPrimary">#8cc6a8</item>
+    </style>
+
+    <!-- fragment events date picker theme -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlActivated">#e2a7a0c0</item>
+    </style>
+
+    <!-- Radio buttons for faculty and year in signup two -->
+    <style name="CustomRadioTheme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">#7a7a7a</item>
+        <item name="colorControlActivated">#47476b</item>
+        <item name="android:colorControlHighlight">#52527a</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!-- Age selection signup three -->
+    <style name="PickerDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#535c</item>
+        <item name="android:colorControlNormal">#47476b</item>
+        <item name="android:textColorPrimary">#7C3355CC</item>
+    </style>
+
+    <!-- Close icon in verify otp class -->
+    <style name="CustomCloseIcon" parent="ThemeOverlay.AppCompat">
+        <item name="colorPrimary">#000</item>
+    </style>
+
+    <!--Style for buttons in new event layout-->
+    <style name="MyButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.Button.Rounded</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!--style used in style MySpinnerDatePickerStyle-->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#caa7d9</item>
+    </style>
+
+    <!--Style for date picker in setting day for new event-->
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+        <item name="android:colorControlNormal">#635581</item>
+        <item name="android:textColorPrimary">#b584c9</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/ButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/ButtonStyle</item>
+    </style>
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+
+    <!--Style for time picker in setting day for new event-->
+    <style name="MySpinnerTimePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:timePickerStyle">@style/MySpinnerTimePicker</item>
+        <item name="android:colorControlNormal">#635581</item>
+        <item name="android:textColorPrimary">#b584c9</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/ButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/ButtonStyle</item>
+    </style>
+    <style name="MySpinnerTimePicker" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+
+    <!--Theme for buttons(date picker and time picker) in add event class-->
+    <style name="CustomButton" parent="ThemeOverlay.AppCompat">
+        <item name="colorPrimary">#e0e0e0</item>
+    </style>
+
+
+    <!--Theme for send code button in Verify Phone activity-->
+    <style name="CodeButton" parent="ThemeOverlay.AppCompat">
+        <item name="colorPrimary">#72A0C1C5</item>
+    </style>
+
+    <!-- Theme for checkbox -->
+    <style name="checkBoxStyle" parent="Theme.AppCompat">
+        <item name="colorAccent">#B9000000</item>
+        <item name="colorControlNormal">#689555</item>
+    </style>
+</resources>

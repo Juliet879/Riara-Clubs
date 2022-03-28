@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.SignupThree"
+    android:padding="30dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_back_arrow"
+            android:contentDescription="Back arrow" />
+
+        <TextView
+            android:id="@+id/signup3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cormorant_garamond_medium"
+            android:text="@string/create_account_title"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/signup3_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_subtitle"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/eb_garamond"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose gender"
+                android:fontFamily="@font/eb_garamond"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb_Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/eb_garamond"
+                    android:button="@null"
+                    android:background="@drawable/genderbutton"
+                    android:drawableTop="@drawable/round_female"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="onGenderClicked"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/eb_garamond"
+                    android:button="@null"
+                    android:background="@drawable/genderbutton"
+                    android:drawableTop="@drawable/round_male"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onGenderClicked"
+                    />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your age"
+                android:fontFamily="@font/eb_garamond"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
+                android:theme="@style/PickerDialog"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/next3_cardView"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="#404a65"
+            app:cardCornerRadius="15dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/rye"
+                    android:text="@string/signup_next"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/eb_garamond"
+            />
+
+        <TextView
+            android:id="@+id/login3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/log_in"
+            android:textColor="#111d3f"
+            android:textSize="25sp"
+            android:fontFamily="@font/life_savers_bold"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

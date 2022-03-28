@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#525252"
+    >
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+
+        <!-- TODO -->
+        <!--Show student details-->
+        <item
+            android:id="@+id/profile"
+            android:title="@string/profile_navigation_drawer"
+            android:icon="@drawable/round_profile"
+            />
+
+        <!-- TODO -->
+        <!--Allow student to change password -->
+        <item
+            android:id="@+id/updatePass"
+            android:title="@string/change_password_navigation_drawer"
+            android:icon="@drawable/round_dark_lock"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+
+        <!-- TODO -->
+        <!-- Show about Riara Clubs -->
+        <item
+            android:id="@+id/info"
+            android:title="@string/about_us_navigation_drawer"
+            android:icon="@drawable/ic_info"
+            />
+
+        <!-- TODO -->
+        <!--Show general club notifications -->
+        <item
+            android:id="@+id/notifications"
+            android:title="@string/notifications_navigation_drawer"
+            android:icon="@drawable/round_notifications"
+            />
+
+    </group>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+
+        <!-- TODO -->
+        <!-- Show about Riara Clubs -->
+        <item
+            android:id="@+id/verifyPhone"
+            android:title="@string/verify_phone_navigation_drawer"
+            android:icon="@drawable/round_dark_phone"
+            />
+
+        <!-- TODO -->
+        <!--Show general club notifications -->
+
+    </group>
+
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/logOut"
+            android:title="@string/log_out_"
+            android:icon="@drawable/round_logout"
+            />
+
+    </group>
+
+</menu>

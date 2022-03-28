@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".events.Event"
+    android:padding="20dp"
+    android:background="#bfb8da"
+    >
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Back arrow"
+        android:src="@drawable/round_back_arrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/life_savers_bold"
+        android:text="@string/your_events"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:ignore="UselessParent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/beYouEvent_cardView"
+                android:layout_width="140dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="45dp"
+                app:cardBackgroundColor="#6f5f90"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-15dp"
+                        android:contentDescription="@string/club_logo_event_card"
+                        android:src="@drawable/beyoulogoevents" />
+
+                    <TextView
+                        android:id="@+id/tv_beYouCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/none"
+                        android:textColor="@color/white"
+                        android:textSize="50sp" />
+
+                    <ImageView
+                        android:id="@+id/addBeYouIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tv_beYouCount"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toEndOf="@+id/tv_beYouCount"
+                        android:contentDescription="@string/add_event_icon"
+                        android:src="@drawable/round_add" />
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Be You"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#000"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/life_savers_bold"
+                        />
+                        -->
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/musicEvent_cardView"
+                android:layout_width="140dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="45dp"
+                app:cardBackgroundColor="#9f6b99"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-30dp"
+                        android:contentDescription="@string/club_logo_event_card"
+                        android:src="@drawable/musiclogo" />
+
+                    <TextView
+                        android:id="@+id/tv_musicCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/none"
+                        android:textColor="@color/white"
+                        android:textSize="50sp" />
+
+                    <ImageView
+                        android:id="@+id/addMusicIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tv_musicCount"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toEndOf="@+id/tv_musicCount"
+                        android:contentDescription="@string/add_event_icon"
+                        android:src="@drawable/round_add" />
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Music"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#000"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/life_savers_bold"
+                        />
+                        -->
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:ignore="UselessParent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/redCrossEvent_cardView"
+                android:layout_width="140dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="65dp"
+                app:cardBackgroundColor="#A297CD"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/redCrossEvent_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-5dp"
+                        android:contentDescription="@string/club_logo_event_card"
+                        android:src="@drawable/redcrosslogo2" />
+
+                    <TextView
+                        android:id="@+id/tv_redCrossCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/none"
+                        android:textColor="@color/white"
+                        android:textSize="50sp" />
+
+                    <ImageView
+                        android:id="@+id/addRedXIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tv_redCrossCount"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toEndOf="@+id/tv_redCrossCount"
+                        android:contentDescription="@string/add_event_icon"
+                        android:src="@drawable/round_add" />
+
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Red Cross"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#000"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/life_savers_bold"
+                        />
+                        -->
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/btnAddEvent"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_toEndOf="@id/addEventIcon"-->
+<!--        android:fontFamily="@font/eb_garamond"-->
+<!--        android:text="@string/add_event"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp" />-->
+
+
+</RelativeLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewBeYouEvent"
+    android:id="@+id/container"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Back arrow"
+                android:src="@drawable/round_back_arrow" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="260dp"
+                android:fontFamily="@font/life_savers_bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Club"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="57dp"
+                android:text="@string/colon"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+            <EditText
+                android:id="@+id/clubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:cursorVisible="false"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:text="Be You Club"
+                tools:ignore="LabelFor"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/eb_garamond"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="57dp"
+                android:text="@string/colon"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+            <EditText
+                android:id="@+id/eventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:cursorVisible="false"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/eb_garamond"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:text="@string/colon"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+
+            <EditText
+                android:id="@+id/eventLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:cursorVisible="false"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/eb_garamond"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#51000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+            <Button
+                android:id="@+id/eventDay"
+                style="@style/MyButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:fontFamily="@font/life_savers_bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:theme="@style/CustomButton"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/time"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/eb_garamond"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_time"
+                android:layout_marginEnd="95dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/end_time"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/startTime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/life_savers_bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                style="@style/MyButtonStyle"
+                android:theme="@style/CustomButton"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/to"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"/>
+
+            <Button
+                android:id="@+id/endTime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/life_savers_bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                style="@style/MyButtonStyle"
+                android:layout_marginStart="33dp"
+                android:theme="@style/CustomButton"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:contentPadding="10dp"
+            app:cardElevation="0dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/Repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/eb_garamond"
+                    android:text="@string/repeat"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textviewFrequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignEnd="@id/Repeat"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/eb_garamond"
+                    android:textSize="16sp"
+                    android:textColor="#C1000000"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/frequency_arrow"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/round_right" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#51000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calendar"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"
+                />
+
+            <TextView
+                android:id="@+id/emailAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calendar"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"
+                android:layout_marginStart="30dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/life_savers_bold"
+            android:text="SAVE"
+            android:textColor="@color/beYou"
+            android:textSize="13sp"
+            android:theme="@style/CustomButton"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

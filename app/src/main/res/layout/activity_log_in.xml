@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:orientation="vertical"
+    android:background="@drawable/marble">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="301dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="-6dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/applogo"
+        android:contentDescription="@string/riara_clubs_logo_description"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:startIconDrawable="@drawable/round_email"
+            android:hint="@string/email_login_hint"
+            android:textColorHint="@color/black"
+            app:hintTextColor="#94110000"
+            app:startIconTint="@color/black"
+            app:endIconTint="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="#4100"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/eb_garamond"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/cursor_login" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="@string/password_login_hint"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/round_key"
+            android:textColorHint="@color/black"
+            app:hintTextColor="#94110000"
+            app:startIconTint="@color/black"
+            app:passwordToggleTint="@color/black"
+            app:endIconTint="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="#4100"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/eb_garamond"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/cursor_login"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/fgt_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp"
+        android:layout_gravity="end"
+        android:fontFamily="@font/life_savers_bold"
+        android:text="@string/forgot_password"
+        android:textColor="#0F94A5"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_card"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="#F1128D"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/rye"
+                android:text="@string/log_in"
+                android:textColor="#161717"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/life_savers_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="#1175A6"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

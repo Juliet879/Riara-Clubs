@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".clubs.InfoMusic">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="660dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="50dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/clubBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/BeYou"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/bg_club_card"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/clubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="MUSIC CLUB"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/cormorant_garamond_medium"
+                />
+
+            <TextView
+                android:id="@+id/aboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/about_us"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/eb_garamond"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/mission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mission_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/eb_garamond"
+                        />
+
+                    <TextView
+                        android:id="@+id/clubMission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="8dp"
+                        android:text="@string/beyou_mission"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/eb_garamond"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/vision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vision_title"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/eb_garamond"
+                        />
+
+                    <TextView
+                        android:id="@+id/clubVision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="8dp"
+                        android:text="@string/beyou_vision"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/eb_garamond"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/eb_garamond"
+                        />
+
+                    <TextView
+                        android:id="@+id/clubDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="8dp"
+                        android:text="@string/beyou_desc"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/eb_garamond"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/officials"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Club Officials"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/eb_garamond"
+                        />
+
+                    <TextView
+                        android:id="@+id/members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Club Members"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/eb_garamond"
+                        />
+
+                    <TextView
+                        android:id="@+id/clubMembers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="8dp"
+                        android:text="The club has 77 members according to the WhatsApp group."
+                        android:textSize="17sp"
+                        android:fontFamily="@font/eb_garamond"
+                        android:textColor="@color/black"/>
+
+
+                    <Button
+                        android:id="@+id/infoBackBtn"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="70dp"
+                        app:cardBackgroundColor="#2370778B"
+                        app:cardCornerRadius="15dp"
+                        style="@style/MyButtonStyle"
+                        android:theme="@style/CustomButton"
+                        android:text="@string/back"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/life_savers_bold"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">Coco</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Bottom menu nav -->
+    <string name="home_bottomnav_title">Home</string>
+    <string name="events_bottomnav_title">Events</string>
+    <string name="payments_bottomnav_title">Payments</string>
+
+    <!-- Log in activity -->
+    <string name="riara_clubs_logo_description">Riara Clubs logo</string>
+    <string name="email_login_hint">Email</string>
+    <string name="password_login_hint">Password</string>
+    <string name="register">Register</string>
+    <string name="log_in">LOG IN</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- Navigation drawer menu -->
+    <string name="profile_navigation_drawer">Profile</string>
+    <string name="change_password_navigation_drawer">Change Password</string>
+    <string name="about_us_navigation_drawer">About us</string>
+    <string name="notifications_navigation_drawer">Notifications</string>
+    <string name="verify_email_navigation_drawer">Verify Email</string>
+    <string name="verify_phone_navigation_drawer">Verify Phone</string>
+    <string name="log_out_">Log out</string>
+
+    <!-- Navigation drawer header -->
+    <string name="riara_clubs">Riara Clubs</string>
+    <string name="slogan">Education is more than books</string>
+
+    <!--Social links in navigation drawer -->
+    <string name="ig_link">Link to Instagram page</string>
+    <string name="twitter_link">Link to twitter page</string>
+    <string name="fb_link">Link to facebook page</string>
+
+    <!--Club card view viewpager -->
+    <string name="club_title">club_title</string>
+    <string name="club_slogan">club_slogan</string>
+    <string name="info">Info</string>
+    <string name="join">Join</string>
+    <string name="club_logo_image">Logo for the club</string>
+    <string name="bg_club_card">Background for the club card view</string>
+
+    <!-- Events fragment -->
+    <string name="mark_your_dates">Mark your dates</string>
+    <string name="view_events">View Events</string>
+
+    <!-- Payments fragment -->
+    <string name="m_pesa">M-PESA</string>
+
+    <!-- Title and subtitle for all signups -->
+    <string name="create_account_title">Create Account</string>
+    <string name="sign_up_subtitle">Fill in to join the fun</string>
+
+    <!--Sign up one -->
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone No</string>
+    <string name="students_id">Students ID</string>
+
+    <!-- for all signups -->
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <!--Next card view for all signups -->
+    <string name="signup_next">Next</string>
+
+    <!-- Students faculty -->
+    <string name="choose_faculty">Choose your faculty</string>
+    <string name="business">Business</string>
+    <string name="computing_science">Computing Science</string>
+    <string name="education">Education</string>
+    <string name="ir">IR</string>
+    <string name="journalism">Journalism</string>
+    <string name="law">Law</string>
+
+
+    <!-- Students year -->
+    <string name="select_year">Select year</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+
+    <!-- Verify otp activity -->
+    <string name="otp_code_text">PHONE NUMBER</string>
+    <string name="otp_description">Enter code sent to your phone number</string>
+    <string name="otp_verification">Verification</string>
+    <string name="verify_otp_text">Verify Number</string>
+
+    <!-- Add event activity -->
+    <string name="back_arrow">Back arrow</string>
+    <string name="new_event_title">New Event</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_event">Add</string>
+    <string name="title">Title</string>
+    <string name="colon">:</string>
+    <string name="location">Location</string>
+    <string name="day">Day</string>
+    <string name="to">to</string>
+    <string name="end_time">End time</string>
+    <string name="start_time">Start time</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="calendar">Calendar</string>
+    <string name="club">Club</string>
+    <string name="frequency_arrow">Arrow for opening frequencies</string>
+
+    <!-- Event repeat activity -->
+    <string name="never">Never</string>
+    <string name="biweekly">Biweekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Annually</string>
+
+    <!-- events activity -->
+    <string name="your_events">Your Events</string>
+    <string name="club_logo_event_card">club logo in replace of club name</string>
+    <string name="none">0</string>
+    <string name="add_event_icon">add event icon</string>
+    <string name="add_event">Add Event</string>
+
+    <!-- Constants in Info and Join -->
+    <string name="about_us">About Us</string>
+    <string name="back">BACK</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="tcDesc">*Kindly read before agreeing to be a member of this club*</string>
+    <string name="agreeing_to_TC"><![CDATA[I have read and agreed to the T&C above]]></string>
+    <string name="cancel_joining">Cancel</string>
+    <string name="joining">Join</string>
+
+
+    <!-- Club info -->
+    <string name="clubTitle">BE YOU CLUB</string>
+    <string name="musicTitle">MUSIC CLUB</string>
+    <string name="redTitle">RED CROSS CLUB</string>
+    <string name="rubiicTitle">RUBIIC CLUB</string>
+
+    <!--Club description -->
+    <string name="beyou_desc">Be You Club is not only about in raising mental awareness and producing students who are emotional and mentally aware which will also help in studies. All our activities not only include members of the club but everyone else. We aim to not have information spread out but also bring fun with our activities.</string>
+    <string name="music_desc">Music Club is more than just…</string>
+    <string name="redcross_desc">Red Cross Club is more than just…</string>
+
+
+    <!--Club Terms and Conditions -->
+    <string name="beyou_tc">1. There is no entry fee but members will be asked to contribute for club activities in order to take part in them.\n 2. All members are required to attend and participate in club meetings.\n 3. Cash payments shall not be accepted. If you make any payment by cash make sure you get a receipt from the Treasurer.</string>
+    <string name="music_tc">In Music Club you should…</string>
+    <string name="redcross_tc">In Red Cross Club you should…</string>
+
+
+    <!-- Profile titles -->
+    <string name="profile_contact">Contact</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_gender">Gender</string>
+    <string name="profile_student_id">Student ID</string>
+    <string name="profile_year">Year</string>
+    <string name="profile_school">School</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_club">Club</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="copyright_text">Riara Clubs. All Rights Reserved.</string>
+
+    <!-- About us -->
+    <string name="about_us_title">ABOUT US</string>
+    <string name="mission_title"><u>Mission Statement</u></string>
+    <string name="vision_title"><u>Vision Statement</u></string>
+
+
+    <!-- About Riara Clubs -->
+    <string name="riara_clubs_about_us">Riara University offers more than just an education gotten from classrooms and this is where Riara Clubs come in. There are many different clubs offered at RU including but not limited to Be You Club, Music Club, RUBIIC Club, Red Cross Club among others. It does not matter which school you come from when choosing which club to join.</string>
+
+
+    <!-- Be you Club -->
+    <string name="beyou_mission">Being able to provide a safe space and create a family where everyone can know they are not alone and that it is okay not to be okay</string>
+    <string name="beyou_vision">To be able to reach a point where students prioritize their mental health and find solace in the club. To have students who are proud of themselves and know how worthy they are.</string>
+    <string name="description_title"><u>Description</u></string>
+    <string name="club_officials_title"><u>Club Officials</u></string>
+    <string name="club_members_title"><u>Club Members</u></string>
+
+    <!-- Reset Password -->
+    <string name="sms">via sms: \n +2547XXXXXXXX</string>
+    <string name="mail">via email: \n xx.xx@riarauniversity.ac.ke</string>
+    <string name="codeverification">Enter the code sent to your email or phone number</string>
+
+    <!-- Profile -->
+    <string name="years">years</string>
+
+
+</resources>

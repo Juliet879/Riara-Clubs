@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saya.coco" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".ViewRedXEvent"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMusicEvent"
+            android:exported="false" />
+        <activity
+            android:name=".AddRedXEvent"
+            android:exported="false" />
+        <activity
+            android:name=".AddMusicEvent"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBeYouEvent"
+            android:exported="false" />
+        <activity
+            android:name=".events.RedCrossEvents"
+            android:exported="false" />
+        <activity
+            android:name=".events.BeYouEvents"
+            android:exported="false" />
+        <activity
+            android:name=".events.MusicEvents"
+            android:exported="false" />
+        <activity
+            android:name=".signup.ResetPassword2"
+            android:exported="false" />
+        <activity
+            android:name=".signup.ResetPassword3"
+            android:exported="false" />
+        <activity
+            android:name=".menu.VerifyEmail"
+            android:exported="false" />
+        <activity
+            android:name=".signup.SignupOne"
+            android:exported="false" />
+        <activity
+            android:name=".menu.AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".signup.SignupTwo"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.InfoMusic"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.InfoRUBIIC"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.InfoRedCross"
+            android:exported="false" />
+        <activity
+            android:name=".signup.SignupThree"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.TcRubiic"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.TcRedCross"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.TcMusic"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.TcBeyou"
+            android:exported="false" />
+        <activity
+            android:name=".clubs.Info_Beyou"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".menu.NewPassword"
+            android:exported="false" />
+        <activity
+            android:name=".EventRepeat"
+            android:exported="false" />
+        <activity
+            android:name=".AddBeYouEvent"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".menu.VerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".signup.SignupLast"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".events.Event"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".signup.ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

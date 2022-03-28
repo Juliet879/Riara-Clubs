@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#525252">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home_bottomnav_title"
+        android:icon="@drawable/round_home"
+        app:cnb_iconColor="#b0b4b8"
+        app:cnb_backgroundColor="#e390ae"
+        />
+    <item
+        android:id="@+id/events"
+        android:title="@string/events_bottomnav_title"
+        android:icon="@drawable/round_event"
+        app:cnb_iconColor="#f3abb6"
+        app:cnb_backgroundColor="#4d446f"
+        />
+    <item
+        android:id="@+id/payments"
+        android:title="@string/payments_bottomnav_title"
+        android:icon="@drawable/round_payments"
+        app:cnb_iconColor="#ebf5f0"
+        app:cnb_backgroundColor="#5880a5"
+        />
+
+</menu>

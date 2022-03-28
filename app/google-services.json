@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "773008343763",
+    "firebase_url": "https://coco-2323-default-rtdb.firebaseio.com",
+    "project_id": "coco-2323",
+    "storage_bucket": "coco-2323.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773008343763:android:5504b96676f07a16870a26",
+        "android_client_info": {
+          "package_name": "com.saya.coco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773008343763-0tga0qcngpo4l3muiv7nc688jc1ahgch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saya.coco",
+            "certificate_hash": "4e277ed9b64b764b47ebfb3c440e1c7e638de962"
+          }
+        },
+        {
+          "client_id": "773008343763-5fohods64scaeq7kp6opllplh7i2luu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaN9TSRh3Ll1lunw4etvQ6endnhryQOmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773008343763-5fohods64scaeq7kp6opllplh7i2luu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
